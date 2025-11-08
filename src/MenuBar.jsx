@@ -12,8 +12,8 @@ class MenuBar extends Component {
     {  
         let  csr = getSession("csrid");
         let data= JSON.stringify({csrid:csr});
-        //callApi("POST","http://localhost:8080/menus/getmenusbyrole",data,this.loadMenus);
-     callApi("POST","http://localhost:8080/menus/getmenus","",this.loadMenus);
+        //callApi("POST","http://localhost:30088/menus/getmenusbyrole",data,this.loadMenus);
+     callApi("POST","http://localhost:30088/menus/getmenus","",this.loadMenus);
     }
     loadMenus(response)
     {
